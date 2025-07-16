@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; }
+      .activity-text { font-family: Arial, sans-serif; font-size: 11px; text-anchor: middle; }
+      .decision-text { font-family: Arial, sans-serif; font-size: 10px; text-anchor: middle; }
+      .start-end { fill: #333; }
+      .activity { fill: #e6f3ff; stroke: #4169e1; stroke-width: 2; }
+      .decision { fill: #fffacd; stroke: #ff8c00; stroke-width: 2; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); }
+      .condition { font-family: Arial, sans-serif; font-size: 9px; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">Activity Diagram - Web Visualisasi Data Mahasiswa</text>
+  
+  <!-- Start -->
+  <circle cx="400" cy="70" r="15" class="start-end"/>
+  <text x="430" y="75" class="activity-text">Start</text>
+  
+  <!-- Load Application -->
+  <rect x="320" y="110" width="160" height="40" class="activity" rx="20"/>
+  <text x="400" y="135" class="activity-text">Load Application</text>
+  
+  <!-- Initialize Data -->
+  <rect x="320" y="180" width="160" height="40" class="activity" rx="20"/>
+  <text x="400" y="205" class="activity-text">Initialize Student Data</text>
+  
+  <!-- Display Dashboard -->
+  <rect x="320" y="250" width="160" height="40" class="activity" rx="20"/>
+  <text x="400" y="275" class="activity-text">Display Dashboard</text>
+  
+  <!-- User Action Decision -->
+  <polygon points="400,320 450,350 400,380 350,350" class="decision"/>
+  <text x="400" y="355" class="decision-text">User Action?</text>
+  
+  <!-- View 3D Visualization -->
+  <rect x="120" y="420" width="140" height="40" class="activity" rx="20"/>
+  <text x="190" y="445" class="activity-text">View 3D Visualization</text>
+  
+  <!-- Filter Data -->
+  <rect x="320" y="420" width="160" height="40" class="activity" rx="20"/>
+  <text x="400" y="445" class="activity-text">Apply Filters</text>
+  
+  <!-- Search Student -->
+  <rect x="540" y="420" width="140" height="40" class="activity" rx="20"/>
+  <text x="610" y="445" class="activity-text">Search Student</text>
+  
+  <!-- Data Processing Decision -->
+  <polygon points="400,500 450,530 400,560 350,530" class="decision"/>
+  <text x="400" y="535" class="decision-text">Data Found?</text>
+  
+  <!-- Update Visualization -->
+  <rect x="120" y="600" width="140" height="40" class="activity" rx="20"/>
+  <text x="190" y="625" class="activity-text">Update Visualization</text>
+  
+  <!-- Display Results -->
+  <rect x="320" y="600" width="160" height="40" class="activity" rx="20"/>
+  <text x="400" y="625" class="activity-text">Display Results</text>
+  
+  <!-- Show Error -->
+  <rect x="540" y="600" width="140" height="40" class="activity" rx="20"/>
+  <text x="610" y="625" class="activity-text">Show Error Message</text>
+  
+  <!-- Continue Decision -->
+  <polygon points="400,680 450,710 400,740 350,710" class="decision"/>
+  <text x="400" y="715" class="decision-text">Continue?</text>
+  
+  <!-- Export Data -->
+  <rect x="120" y="780" width="140" height="40" class="activity" rx="20"/>
+  <text x="190" y="805" class="activity-text">Export Data</text>
+  
+  <!-- End -->
+  <circle cx="400" cy="850" r="15" class="start-end"/>
+  <circle cx="400" cy="850" r="10" fill="#fff"/>
+  <text x="430" y="855" class="activity-text">End</text>
+  
+  <!-- Arrows and Flow -->
+  <line x1="400" y1="85" x2="400" y2="110" class="arrow"/>
+  <line x1="400" y1="150" x2="400" y2="180" class="arrow"/>
+  <line x1="400" y1="220" x2="400" y2="250" class="arrow"/>
+  <line x1="400" y1="290" x2="400" y2="320" class="arrow"/>
+  
+  <!-- From decision to activities -->
+  <line x1="350" y1="350" x2="190" y2="420" class="arrow"/>
+  <text x="270" y="385" class="condition">3D View</text>
+  
+  <line x1="400" y1="380" x2="400" y2="420" class="arrow"/>
+  <text x="420" y="400" class="condition">Filter</text>
+  
+  <line x1="450" y1="350" x2="610" y2="420" class="arrow"/>
+  <text x="530" y="385" class="condition">Search</text>
+  
+  <!-- From activities to processing -->
+  <line x1="190" y1="460" x2="350" y2="500" class="arrow"/>
+  <line x1="400" y1="460" x2="400" y2="500" class="arrow"/>
+  <line x1="610" y1="460" x2="450" y2="500" class="arrow"/>
+  
+  <!-- From processing to results -->
+  <line x1="350" y1="530" x2="190" y2="600" class="arrow"/>
+  <text x="270" y="565" class="condition">Yes</text>
+  
+  <line x1="400" y1="560" x2="400" y2="600" class="arrow"/>
+  <text x="420" y="580" class="condition">Yes</text>
+  
+  <line x1="450" y1="530" x2="610" y2="600" class="arrow"/>
+  <text x="530" y="565" class="condition">No</text>
+  
+  <!-- From results to continue -->
+  <line x1="190" y1="640" x2="350" y2="680" class="arrow"/>
+  <line x1="400" y1="640" x2="400" y2="680" class="arrow"/>
+  <line x1="610" y1="640" x2="450" y2="680" class="arrow"/>
+  
+  <!-- From continue decision -->
+  <line x1="350" y1="710" x2="190" y2="780" class="arrow"/>
+  <text x="270" y="745" class="condition">Export</text>
+  
+  <line x1="400" y1="740" x2="400" y2="835" class="arrow"/>
+  <text x="420" y="787" class="condition">No</text>
+  
+  <!-- Back to user action -->
+  <line x1="450" y1="710" x2="650" y2="350" class="arrow" stroke-dasharray="3,3"/>
+  <text x="550" y="530" class="condition">Yes</text>
+  
+  <!-- From export to end -->
+  <line x1="190" y1="820" x2="385" y2="835" class="arrow"/>
+</svg>

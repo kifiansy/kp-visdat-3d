@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; }
+      .header-text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .nav-text { font-family: Arial, sans-serif; font-size: 12px; }
+      .content-text { font-family: Arial, sans-serif; font-size: 11px; }
+      .small-text { font-family: Arial, sans-serif; font-size: 10px; }
+      .browser { fill: #f5f5f5; stroke: #ccc; stroke-width: 2; }
+      .header { fill: #2563eb; }
+      .sidebar { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 1; }
+      .card { fill: #fff; stroke: #e2e8f0; stroke-width: 1; }
+      .button { fill: #3b82f6; stroke: #2563eb; stroke-width: 1; }
+      .button-text { fill: white; font-size: 10px; }
+      .chart-area { fill: #f1f5f9; stroke: #cbd5e1; stroke-width: 1; }
+      .nav-item { fill: #e2e8f0; stroke: #cbd5e1; stroke-width: 1; }
+      .search-box { fill: #fff; stroke: #d1d5db; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="600" y="30" text-anchor="middle" class="title">UI Mockup - Web Visualisasi Data Mahasiswa</text>
+  
+  <!-- Browser Window -->
+  <rect x="50" y="60" width="1100" height="700" class="browser" rx="10"/>
+  
+  <!-- Browser Header -->
+  <rect x="50" y="60" width="1100" height="40" fill="#e5e7eb" stroke="#d1d5db" stroke-width="1" rx="10 10 0 0"/>
+  <circle cx="80" cy="80" r="6" fill="#ef4444"/>
+  <circle cx="100" cy="80" r="6" fill="#f59e0b"/>
+  <circle cx="120" cy="80" r="6" fill="#10b981"/>
+  <rect x="200" y="70" width="700" height="20" fill="#fff" stroke="#d1d5db" stroke-width="1" rx="10"/>
+  <text x="210" y="83" class="small-text">https://student-visualization.app</text>
+  
+  <!-- Application Header -->
+  <rect x="50" y="100" width="1100" height="60" class="header"/>
+  <text x="80" y="125" class="header-text" fill="white">Student Data Visualization</text>
+  <text x="80" y="145" class="nav-text" fill="white">Dashboard untuk Visualisasi Data Mahasiswa</text>
+  
+  <!-- Search Bar -->
+  <rect x="850" y="115" width="250" height="30" class="search-box" rx="15"/>
+  <text x="860" y="133" class="small-text" fill="#6b7280">🔍 Search students...</text>
+  
+  <!-- User Menu -->
+  <rect x="1120" y="115" width="20" height="30" fill="#1f2937" rx="3"/>
+  <text x="1130" y="133" class="small-text" fill="white" text-anchor="middle">👤</text>
+  
+  <!-- Main Layout -->
+  <!-- Sidebar -->
+  <rect x="50" y="160" width="200" height="600" class="sidebar"/>
+  <text x="60" y="185" class="header-text">Navigation</text>
+  
+  <!-- Navigation Items -->
+  <rect x="60" y="200" width="180" height="35" class="nav-item" rx="5"/>
+  <text x="70" y="220" class="nav-text">📊 Dashboard</text>
+  
+  <rect x="60" y="245" width="180" height="35" fill="#3b82f6" rx="5"/>
+  <text x="70" y="265" class="nav-text" fill="white">🎯 3D Visualization</text>
+  
+  <rect x="60" y="290" width="180" height="35" class="nav-item" rx="5"/>
+  <text x="70" y="310" class="nav-text">📈 Statistics</text>
+  
+  <rect x="60" y="335" width="180" height="35" class="nav-item" rx="5"/>
+  <text x="70" y="355" class="nav-text">👥 Students</text>
+  
+  <rect x="60" y="380" width="180" height="35" class="nav-item" rx="5"/>
+  <text x="70" y="400" class="nav-text">🎓 Programs</text>
+  
+  <rect x="60" y="425" width="180" height="35" class="nav-item" rx="5"/>
+  <text x="70" y="445" class="nav-text">📋 Reports</text>
+  
+  <!-- Settings Section -->
+  <text x="60" y="500" class="header-text">Settings</text>
+  <rect x="60" y="515" width="180" height="35" class="nav-item" rx="5"/>
+  <text x="70" y="535" class="nav-text">⚙️ Configuration</text>
+  
+  <rect x="60" y="560" width="180" height="35" class="nav-item" rx="5"/>
+  <text x="70" y="580" class="nav-text">📤 Export</text>
+  
+  <!-- Main Content Area -->
+  <rect x="250" y="160" width="900" height="600" fill="#fff"/>
+  
+  <!-- Control Panel -->
+  <rect x="270" y="180" width="860" height="80" class="card" rx="5"/>
+  <text x="280" y="200" class="header-text">Control Panel</text>
+  
+  <!-- Filter Controls -->
+  <rect x="280" y="210" width="120" height="30" class="search-box" rx="3"/>
+  <text x="285" y="228" class="small-text">Program</text>
+  
+  <rect x="410" y="210" width="120" height="30" class="search-box" rx="3"/>
+  <text x="415" y="228" class="small-text">Year</text>
+  
+  <rect x="540" y="210" width="120" height="30" class="search-box" rx="3"/>
+  <text x="545" y="228" class="small-text">Status</text>
+  
+  <rect x="670" y="210" width="80" height="30" class="button" rx="3"/>
+  <text x="710" y="228" class="button-text" text-anchor="middle">Filter</text>
+  
+  <rect x="760" y="210" width="80" height="30" fill="#6b7280" rx="3"/>
+  <text x="800" y="228" class="button-text" text-anchor="middle">Reset</text>
+  
+  <!-- View Options -->
+  <text x="950" y="225" class="small-text">View:</text>
+  <rect x="990" y="210" width="40" height="30" class="button" rx="3"/>
+  <text x="1010" y="228" class="button-text" text-anchor="middle">3D</text>
+  
+  <rect x="1040" y="210" width="40" height="30" fill="#6b7280" rx="3"/>
+  <text x="1060" y="228" class="button-text" text-anchor="middle">2D</text>
+  
+  <!-- 3D Visualization Area -->
+  <rect x="270" y="280" width="600" height="400" class="chart-area" rx="5"/>
+  <text x="570" y="300" class="header-text" text-anchor="middle">3D Data Visualization</text>
+  
+  <!-- 3D Scene Elements -->
+  <!-- Coordinate System -->
+  <line x1="320" y1="630" x2="420" y2="630" stroke="#666" stroke-width="2"/>
+  <line x1="320" y1="630" x2="320" y2="530" stroke="#666" stroke-width="2"/>
+  <line x1="320" y1="630" x2="370" y2="580" stroke="#666" stroke-width="2"/>
+  
+  <text x="425" y="635" class="small-text">X (Program)</text>
+  <text x="290" y="525" class="small-text">Y (GPA)</text>
+  <text x="375" y="575" class="small-text">Z (Year)</text>
+  
+  <!-- Data Points -->
+  <circle cx="380" cy="580" r="8" fill="#ef4444" opacity="0.7"/>
+  <circle cx="420" cy="550" r="10" fill="#3b82f6" opacity="0.7"/>
+  <circle cx="450" cy="600" r="6" fill="#10b981" opacity="0.7"/>
+  <circle cx="500" cy="520" r="12" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="550" cy="570" r="9" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="600" cy="540" r="7" fill="#ec4899" opacity="0.7"/>
+  <circle cx="650" cy="590" r="11" fill="#06b6d4" opacity="0.7"/>
+  
+  <!-- 3D Clusters -->
+  <ellipse cx="450" cy="570" rx="60" ry="40" fill="#3b82f6" opacity="0.1" stroke="#3b82f6" stroke-width="1"/>
+  <ellipse cx="580" cy="540" rx="50" ry="35" fill="#10b981" opacity="0.1" stroke="#10b981" stroke-width="1"/>
+  
+  <!-- Data Panel -->
+  <rect x="890" y="280" width="240" height="400" class="card" rx="5"/>
+  <text x="900" y="300" class="header-text">Data Summary</text>
+  
+  <!-- Statistics Cards -->
+  <rect x="900" y="310" width="100" height="60" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" rx="3"/>
+  <text x="950" y="330" class="content-text" text-anchor="middle">Total Students</text>
+  <text x="950" y="350" class="header-text" text-anchor="middle">1,247</text>
+  
+  <rect x="1010" y="310" width="100" height="60" fill="#dcfce7" stroke="#10b981" stroke-width="1" rx="3"/>
+  <text x="1060" y="330" class="content-text" text-anchor="middle">Active</text>
+  <text x="1060" y="350" class="header-text" text-anchor="middle">1,156</text>
+  
+  <rect x="900" y="380" width="100" height="60" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" rx="3"/>
+  <text x="950" y="400" class="content-text" text-anchor="middle">Avg GPA</text>
+  <text x="950" y="420" class="header-text" text-anchor="middle">3.42</text>
+  
+  <rect x="1010" y="380" width="100" height="60" fill="#fce7f3" stroke="#ec4899" stroke-width="1" rx="3"/>
+  <text x="1060" y="400" class="content-text" text-anchor="middle">Graduated</text>
+  <text x="1060" y="420" class="header-text" text-anchor="middle">91</text>
+  
+  <!-- Legend -->
+  <text x="900" y="470" class="header-text">Legend</text>
+  
+  <circle cx="910" cy="485" r="6" fill="#3b82f6"/>
+  <text x="925" y="490" class="small-text">Computer Science</text>
+  
+  <circle cx="910" cy="505" r="6" fill="#10b981"/>
+  <text x="925" y="510" class="small-text">Information System</text>
+  
+  <circle cx="910" cy="525" r="6" fill="#f59e0b"/>
+  <text x="925" y="530" class="small-text">Mathematics</text>
+  
+  <circle cx="910" cy="545" r="6" fill="#ec4899"/>
+  <text x="925" y="550" class="small-text">Statistics</text>
+  
+  <!-- Chart Controls -->
+  <text x="900" y="580" class="header-text">Controls</text>
+  
+  <rect x="900" y="590" width="80" height="25" class="button" rx="3"/>
+  <text x="940" y="605" class="button-text" text-anchor="middle">Rotate</text>
+  
+  <rect x="990" y="590" width="80" height="25" fill="#6b7280" rx="3"/>
+  <text x="1030" y="605" class="button-text" text-anchor="middle">Reset View</text>
+  
+  <rect x="900" y="625" width="80" height="25" fill="#10b981" rx="3"/>
+  <text x="940" y="640" class="button-text" text-anchor="middle">Zoom In</text>
+  
+  <rect x="990" y="625" width="80" height="25" fill="#ef4444" rx="3"/>
+  <text x="1030" y="640" class="button-text" text-anchor="middle">Zoom Out</text>
+  
+  <!-- Status Bar -->
+  <rect x="50" y="720" width="1100" height="40" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="0 0 10 10"/>
+  <text x="70" y="740" class="small-text">Ready | 1,247 records loaded | Last updated: 2024-01-15 10:30</text>
+  <text x="1080" y="740" class="small-text" text-anchor="end">Performance: 60 FPS</text>
+</svg>

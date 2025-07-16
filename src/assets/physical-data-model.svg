@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; }
+      .table-title { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; }
+      .field-text { font-family: Arial, sans-serif; font-size: 11px; }
+      .pk { font-weight: bold; text-decoration: underline; }
+      .fk { font-style: italic; }
+      .table { fill: #f0f8ff; stroke: #4169e1; stroke-width: 2; }
+      .header { fill: #4169e1; }
+      .header-text { fill: white; }
+      .relation { stroke: #333; stroke-width: 2; }
+      .one { font-family: Arial, sans-serif; font-size: 10px; }
+      .many { font-family: Arial, sans-serif; font-size: 10px; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">Physical Data Model - Web Visualisasi Data Mahasiswa</text>
+  
+  <!-- Students Table -->
+  <rect x="50" y="80" width="200" height="280" class="table" rx="5"/>
+  <rect x="50" y="80" width="200" height="30" class="header"/>
+  <text x="150" y="100" text-anchor="middle" class="table-title header-text">STUDENTS</text>
+  
+  <!-- Students Fields -->
+  <text x="60" y="125" class="field-text pk">student_id (PK)</text>
+  <text x="60" y="140" class="field-text">name</text>
+  <text x="60" y="155" class="field-text">email</text>
+  <text x="60" y="170" class="field-text">phone</text>
+  <text x="60" y="185" class="field-text">program_id (FK)</text>
+  <text x="60" y="200" class="field-text">year_entry</text>
+  <text x="60" y="215" class="field-text">semester</text>
+  <text x="60" y="230" class="field-text">gpa</text>
+  <text x="60" y="245" class="field-text">status</text>
+  <text x="60" y="260" class="field-text">gender</text>
+  <text x="60" y="275" class="field-text">birth_date</text>
+  <text x="60" y="290" class="field-text">address</text>
+  <text x="60" y="305" class="field-text">guardian_name</text>
+  <text x="60" y="320" class="field-text">guardian_phone</text>
+  <text x="60" y="335" class="field-text">created_at</text>
+  <text x="60" y="350" class="field-text">updated_at</text>
+  
+  <!-- Programs Table -->
+  <rect x="320" y="80" width="180" height="200" class="table" rx="5"/>
+  <rect x="320" y="80" width="180" height="30" class="header"/>
+  <text x="410" y="100" text-anchor="middle" class="table-title header-text">PROGRAMS</text>
+  
+  <!-- Programs Fields -->
+  <text x="330" y="125" class="field-text pk">program_id (PK)</text>
+  <text x="330" y="140" class="field-text">program_name</text>
+  <text x="330" y="155" class="field-text">program_code</text>
+  <text x="330" y="170" class="field-text">faculty_id (FK)</text>
+  <text x="330" y="185" class="field-text">degree_level</text>
+  <text x="330" y="200" class="field-text">duration_years</text>
+  <text x="330" y="215" class="field-text">accreditation</text>
+  <text x="330" y="230" class="field-text">description</text>
+  <text x="330" y="245" class="field-text">created_at</text>
+  <text x="330" y="260" class="field-text">updated_at</text>
+  
+  <!-- Faculties Table -->
+  <rect x="550" y="80" width="180" height="180" class="table" rx="5"/>
+  <rect x="550" y="80" width="180" height="30" class="header"/>
+  <text x="640" y="100" text-anchor="middle" class="table-title header-text">FACULTIES</text>
+  
+  <!-- Faculties Fields -->
+  <text x="560" y="125" class="field-text pk">faculty_id (PK)</text>
+  <text x="560" y="140" class="field-text">faculty_name</text>
+  <text x="560" y="155" class="field-text">faculty_code</text>
+  <text x="560" y="170" class="field-text">dean_name</text>
+  <text x="560" y="185" class="field-text">establishment_year</text>
+  <text x="560" y="200" class="field-text">description</text>
+  <text x="560" y="215" class="field-text">contact_email</text>
+  <text x="560" y="230" class="field-text">contact_phone</text>
+  <text x="560" y="245" class="field-text">created_at</text>
+  
+  <!-- Courses Table -->
+  <rect x="50" y="400" width="200" height="160" class="table" rx="5"/>
+  <rect x="50" y="400" width="200" height="30" class="header"/>
+  <text x="150" y="420" text-anchor="middle" class="table-title header-text">COURSES</text>
+  
+  <!-- Courses Fields -->
+  <text x="60" y="445" class="field-text pk">course_id (PK)</text>
+  <text x="60" y="460" class="field-text">course_name</text>
+  <text x="60" y="475" class="field-text">course_code</text>
+  <text x="60" y="490" class="field-text">credits</text>
+  <text x="60" y="505" class="field-text">semester</text>
+  <text x="60" y="520" class="field-text">program_id (FK)</text>
+  <text x="60" y="535" class="field-text">created_at</text>
+  <text x="60" y="550" class="field-text">updated_at</text>
+  
+  <!-- Student_Courses Table -->
+  <rect x="320" y="350" width="200" height="180" class="table" rx="5"/>
+  <rect x="320" y="350" width="200" height="30" class="header"/>
+  <text x="420" y="370" text-anchor="middle" class="table-title header-text">STUDENT_COURSES</text>
+  
+  <!-- Student_Courses Fields -->
+  <text x="330" y="395" class="field-text pk">enrollment_id (PK)</text>
+  <text x="330" y="410" class="field-text fk">student_id (FK)</text>
+  <text x="330" y="425" class="field-text fk">course_id (FK)</text>
+  <text x="330" y="440" class="field-text">academic_year</text>
+  <text x="330" y="455" class="field-text">semester</text>
+  <text x="330" y="470" class="field-text">grade</text>
+  <text x="330" y="485" class="field-text">grade_point</text>
+  <text x="330" y="500" class="field-text">status</text>
+  <text x="330" y="515" class="field-text">enrolled_at</text>
+  
+  <!-- Relationships -->
+  <!-- Students to Programs -->
+  <line x1="250" y1="185" x2="320" y2="150" class="relation"/>
+  <text x="280" y="165" class="one">1</text>
+  <text x="260" y="180" class="many">M</text>
+  
+  <!-- Programs to Faculties -->
+  <line x1="500" y1="170" x2="550" y2="170" class="relation"/>
+  <text x="520" y="165" class="many">M</text>
+  <text x="535" y="165" class="one">1</text>
+  
+  <!-- Students to Student_Courses -->
+  <line x1="150" y1="360" x2="320" y2="410" class="relation"/>
+  <text x="170" y="375" class="one">1</text>
+  <text x="300" y="405" class="many">M</text>
+  
+  <!-- Courses to Student_Courses -->
+  <line x1="250" y1="480" x2="320" y2="440" class="relation"/>
+  <text x="270" y="475" class="one">1</text>
+  <text x="300" y="450" class="many">M</text>
+  
+  <!-- Courses to Programs -->
+  <line x1="250" y1="480" x2="320" y2="220" class="relation" stroke-dasharray="3,3"/>
+  <text x="270" y="350" class="many">M</text>
+  <text x="300" y="230" class="one">1</text>
+  
+  <!-- Data Types Legend -->
+  <rect x="580" y="350" width="180" height="200" fill="#f9f9f9" stroke="#ccc" stroke-width="1" rx="5"/>
+  <text x="670" y="370" text-anchor="middle" class="table-title">Data Types Legend</text>
+  
+  <text x="590" y="390" class="field-text">VARCHAR(n) - Text</text>
+  <text x="590" y="405" class="field-text">INT - Integer</text>
+  <text x="590" y="420" class="field-text">DECIMAL(p,s) - Decimal</text>
+  <text x="590" y="435" class="field-text">DATE - Date</text>
+  <text x="590" y="450" class="field-text">DATETIME - Timestamp</text>
+  <text x="590" y="465" class="field-text">ENUM - Enumeration</text>
+  
+  <text x="590" y="490" class="field-text pk">PK - Primary Key</text>
+  <text x="590" y="505" class="field-text fk">FK - Foreign Key</text>
+  <text x="590" y="520" class="field-text">1 - One</text>
+  <text x="590" y="535" class="field-text">M - Many</text>
+</svg>
